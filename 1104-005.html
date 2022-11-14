@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>그레디언트</title>
+    <style>
+        #box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            background: red;
+            margin: 50px auto;
+            /* background: linear-gradient(to top, red,yellow); */
+            /* 아래서 위로 그라데이션 */
+            /* background: linear-gradient(45deg, red, yellow);
+            45각도로 그라데이션*/
+            /* background: repeating-linear-gradient(to top, red 0px, red 20px, yellow 20px, yellow 40px); */
+            /* background: repeating-radial-gradient(ellipse, red 0px, red 20px, yellow 20px, yellow 40px);  ellipse-circle */
+            transition: 2s;
+            /* 2초의 속도로 */
+            /* transform:skewX(60deg); */
+        }
+
+        #box:hover {
+            transform: scale(2.0);
+            /* 2배로 키움 */
+        }
+    </style>
+</head>
+<body>
+    <div id="box"></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 선택자 사용</title>
+    <style>
+        #wrapper {
+            width: 1200px;
+            height: 100vh;
+            margin: 0 auto;
+            border: 1px solid black;
+            background: url(jennie.jpg) no-repeat;
+             /* background-repeat: no-repeat; ->짧게 background:뒤에 힌번에 다 적기*/ 
+            /* backgrosund-size: cover; */
+        }
+
+        a:link {
+            width: 50px;
+            height: 50px;
+            border: 2px solid red;
+            padding: 5px; 
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: pink; 
+        }
+        a:visited {
+            color: yellow;
+            /* 일단 한번이상 방문한 부분 (색이 바뀜) */
+        }
+        a:hover{
+            text-decoration: underline;
+            /* 마우스를 오버했을때 반응 */
+        }
+        a:active{
+            color: red;
+            /* 링크를 클릭하는 순간 (red로 바뀜)*/
+        }
+
+    </style>
+</head>
+<body>
+    <div id="wrapper">
+        <a href="#">링크1</a>
+    </div>
+</body>
+</html>
